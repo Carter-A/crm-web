@@ -16,6 +16,11 @@ class Contact
   def self.all
     @@contacts
   end
+
+  def self.find(contact_id)
+    @@contacts.find{ |contact| contact.id == contact_id }
+  end
+
   def self.create(first_name, last_name, email, note)
     new_contact = Contact.new(first_name, last_name, email, note)
     @@contacts << new_contact

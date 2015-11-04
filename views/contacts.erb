@@ -6,12 +6,10 @@
   </div>
 </div>
 
-<ul>
-<% Contact.all.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %> <strong>Email:</strong> <%= contact.email %> <strong>Notes:</strong> <%= contact.note %></li>
-  <form method="get" action="/contacts/<%= contact.id %>" >
-    <input type="hidden"/>
-    <input type="submit" value="Delete" />
-  </form>
-<% end %>
-</ul>
+<div class="list-group col-sm-10 col-sm-offset-1">
+  <% Contact.all.each do |contact| %>
+    <form action="/contacts/<%= contact.id %>">
+      <button type="submit" class="list-group-item"><%= contact.first_name %> <%= contact.last_name %></button>
+    </form>
+  <% end %>
+</div>
