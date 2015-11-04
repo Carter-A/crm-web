@@ -1,18 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Create new Contact</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1>Create New Contact</h1>
+    </div>
+  </div>
+</div>
 
-<form action="/contacts" method="post">
-  <input type="text" name="first_name">
-  <input type="text" name="last_name">
-  <input type="text" name="email">
-  <input type="text" name="note">
-  <input type="submit" name="Submit">
-</form>
-</body>
-</html>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form role="form" action="/contacts" method="post">
+        <div class="form-group">
+          <label for="first_name">First Name:</label>
+          <input type="text" name="first_name" class="form-control" id="first-name" value="" placeholder="Enter First Name">
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name" class="form-control" id="last-name" value="" placeholder="Enter Last Name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">First Email:</label>
+          <input type="text" name="email" class="form-control" id="email" value="" placeholder="Enter Email">
+        </div>
+
+        <div class="form-group">
+          <label for="note">Note:</label>
+          <input type="text" name="note" class="form-control" id="note" value="" placeholder="Enter Note">
+        </div>
+        <button type="submit" name="Submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
