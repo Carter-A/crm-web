@@ -1,3 +1,10 @@
+/*global*/
+body {
+  background-color: #FFFCF5;
+  color: #66615b;
+  margin-bottom: 70px;
+}
+
 ul {
   list-style: none;
 }
@@ -10,31 +17,76 @@ h1 {
   text-align: center;
 }
 
-.show-all-list {
-  display: block;
+/*navbar*/
+.navbar {
+  background-color: #7A9E9F;
 }
 
-.show-btn {
-  display: inline;
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
   margin-left: 0;
 }
 
+/*----content----*/
+
+/*show all*/
+.show-all-list {
+  display: block;
+}
+
+.list-group-item {
+  background-color: #FFFCF5;
+}
+
+a.list-group-item, button.list-group-item {
+  color: #66615b;
+}
+
+.show-btn {
+  display: inline;
+}
+
+/*buttons*/
+.btn-info {
+  background-color: #68B3C8;
+}
+
+
+.btn-danger {
+  background-color: #EB5E28;
+}
+
+.btn-default {
+  background-color: #FFFCF5;
+}
+
+/*forms*/
+.form-control {
+  background-color: #FFFCF5;
+}
+
+
+/*footer*/
 .footer-wrapper{
   padding-left: 0;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #7A9E9F;
 }
 
 .footer p {
   margin: 20px 0;
-  color: #777;
+  color: white;
 }
