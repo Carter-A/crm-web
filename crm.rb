@@ -80,7 +80,3 @@ post '/contacts' do
   )
   redirect to('/contacts')
 end
-
-put '/modify' do
-
-end
